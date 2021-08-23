@@ -1,0 +1,21 @@
+
+.sli {
+	width: 950px;
+	height: 500px;
+	display: block;
+	border: 0px solid black;
+	background-color: rgba(172, 32, 32, 0.5);
+	margin-top: 150px;
+	margin-left: 170px;
+
+	img {
+		width: 100%;
+		height: 500px;
+		object-fit: contain;
+	}
+
+	.slick-prev:before,
+	.slick-next:before {
+		color: black;
+	}
+}

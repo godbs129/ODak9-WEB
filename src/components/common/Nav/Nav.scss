@@ -1,0 +1,61 @@
+
+.nav-bar {
+	width: 1622px;
+	height: 63px;
+	position: relative;
+	left: 130px;
+	top: 40px;
+	font-size: 20px;
+
+	img {
+		width: 100px;
+		height: 63px;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	.nav-home {
+		position: relative;
+		bottom: 20px;
+		margin-left: 50px;
+		margin-right: 35px;
+	}
+	.nav-com {
+		position: relative;
+		bottom: 20px;
+		margin-right: 35px;
+	}
+	.nav-save {
+		position: relative;
+		bottom: 20px;
+		margin-right: 35px;
+	}
+	.nav-cal {
+		position: relative;
+		bottom: 20px;
+	}
+
+	.find {
+		position: relative;
+		float: right;
+		margin-top: 20px;
+		border: 1px solid #ACACAC;
+		border-radius: 20px;
+		width: 400px;
+		height: 29px;
+
+		.nav-find-icon {
+			margin-left: 5px;
+			margin-top: 5px;
+		}
+		
+		.nav-input {
+			position: relative;
+			bottom: 6px;
+			width: 90%;
+			height: 70%;
+			border: 0;
+		}
+	}
+}

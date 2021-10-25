@@ -24,6 +24,9 @@ const Login = (): JSX.Element => {
 						<div className="logout-btn"><GrLogout className="logout-icon" /><span className="logout-button">로그아웃</span></div>
 					</div>
 				</div>
+				<div className="login-under">
+
+				</div>
 			</div>
 		</>
 	);

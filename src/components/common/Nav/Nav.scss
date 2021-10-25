@@ -2,10 +2,9 @@
 .nav-bar {
 	width: 1622px;
 	height: 63px;
-	position: relative;
-	left: 130px;
-	top: 40px;
 	font-size: 20px;
+	margin-left: 5vw;
+	margin-top: 4vh;
 
 	img {
 		width: 100px;
@@ -37,8 +36,8 @@
 	}
 
 	.find {
-		position: relative;
 		float: right;
+		margin-right: 3vw;
 		margin-top: 20px;
 		border: 1px solid #ACACAC;
 		border-radius: 20px;

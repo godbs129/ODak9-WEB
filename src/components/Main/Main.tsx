@@ -1,12 +1,15 @@
 import { ImageSlider } from "./ImageSlider"
 import { Login } from "./Login"
+import './Main.scss';
 
 const Main = (): JSX.Element => {
 
 	return (
 		<>
-			<ImageSlider />
-			<Login />
+			<div className="main">
+				<ImageSlider />
+				<Login />
+			</div>
 		</>
 	);
 }

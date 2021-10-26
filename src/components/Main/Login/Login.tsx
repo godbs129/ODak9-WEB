@@ -1,35 +1,29 @@
-import LoginCon from '../../../assets/Login-icon.svg';
+import { Link } from 'react-router-dom';
 import './Login.scss';
-import { GrLogout } from 'react-icons/gr';
 
 const Login = (): JSX.Element => {
-
-	const user = {
-		"id": "test",
-		"pw": "test",
-		"name": "박지나",
-		"nickName": "무병장수",
-		"picture": "http://dodam.b1nd.com/static/media/profile.7a21cbe9.svg"
-	}
 
 	return (
 		<>
 			<div className="login">
-				<img className="box-ima" src={LoginCon} />
 				<div className="login-box">
-					<div className="login-box-user">
-						<img className="box-user-image" src={user.picture}></img>
-						<span className="box-user-name">{user.name}</span>
-						<span className="box-user-nick">{user.nickName}</span>
-						<div className="logout-btn"><GrLogout className="logout-icon" /><span className="logout-button">로그아웃</span></div>
+					<div className="login-box-box">
+						<p className="login-box-box-text">Login</p>
+						<p className="login-box-box-idtext">ID</p>
+						<input type="text" name="id" className="login-box-box-id" /><br />
+						<p className="login-box-box-pwtext">Password</p>
+						<input type="password" name="pw" className="login-box-box-pw" />
 					</div>
-				</div>
-				<div className="login-under">
-
+					<div className="login-box-check">
+						<input type="checkbox" id="login-check" />
+						<label>로그인 기억하기</label><br />
+					</div>
+					<button className="login-box-btn">로그인</button><br />
+					<span className="login-box-goto">아직 계정이 없다면 &gt; <Link to="/register">회원가입</Link> </span>
 				</div>
 			</div>
 		</>
-	);
+	)
 }
 
 export default Login;

@@ -1,14 +1,18 @@
 import ImageSlider from "./ImageSlider/ImageSlider"
-import Login from "./Login/Login";
+import Profile from "./Profile/Profile";
 import './Main.scss';
+import Cookies from "js-cookie";
+import Login from "./Login/Login";
 
 const Main = (): JSX.Element => {
+	const LS = localStorage.getItem('token');
+	const cookie = Cookies.get('token');
 
 	return (
 		<>
 			<div className="main">
 				<ImageSlider />
-				<Login />
+				{LS || cookie ? <Profile /> : <Login />}
 			</div>
 		</>
 	);

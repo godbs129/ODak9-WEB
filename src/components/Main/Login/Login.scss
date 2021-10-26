@@ -1,69 +1,73 @@
 
 .login {
-	width: 300px;
-	bottom: 604px;
+	width: 500px;
 	margin-left: 5vw;
+	margin-top: 10.3vh;
 
-	 .box-ima{
-		position: relative;
-		top: 17px;
-		left: 350px;
-	}
-
-	.login-box {
+	&-box {
 		width: 500px;
 		height: 500px;
 		border: 0.5px solid #E0E0E0;
+		text-align: center;
 
-		.login-box-user {
-			border-bottom: 1px solid #E0E0E0;
-			height: 121px;
+		&-btn {
+			margin-top: 6vh;
+			width: 12vw;
+			height: 3.3vh;
+			color: white;
+			border-radius: 40px;
+			border: 0;
+			background-color: #FC6E51;
+			margin-bottom: 0.5vh;
+		}
 
-			.box-user-image {
-				height: 59px;
-				margin-top: 30px;
-				margin-left: 50px;
+		&-goto {
+			font-size: 0.9rem;
+		}
+
+		&-check {
+			margin-right: 10.3vw;
+		}
+
+		&-box {
+			margin-top: 6vh;
+			margin-bottom: 2vh;
+
+			&-text {
+				margin-right: 14vw;
+				font-size: 1.2rem;
+				font-weight: 600;
+				margin-bottom: 5vh;
 			}
-			
-			.box-user-name {
-				position: relative;
-				bottom: 33px;
-				left: 30px;
-				font-weight: 700;
-				font-size: 17px;
+
+			&-idtext {
+				margin-bottom: 0;
+				margin-right: 15.3vw;
 			}
 
-			.box-user-nick {
-				position: relative;
-				bottom: 10px;
-				right: 14px;
-				font-size: 14px;
+			&-id {
+				width: 16vw;
+				margin-top: 0.5vh;
+				height: 4vh;
+				border: 0;
+				background-color: #F3F3F3;
+				box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				font-size: 1rem;
 			}
 
-			.logout-btn {
-				position: relative;
-				bottom: 45px;
-				left: 370px;
-				width: 90px;
-				height: 30px;
-				border: 1px solid #E5E5E5;
-				border-radius: 50px;
-				cursor: pointer;
+			&-pwtext {
+				margin-top: 3vh;
+				margin-bottom: 0;
+				margin-right: 12.6vw;
+			}
 
-				.logout-icon {
-					position: relative;
-					top: 2px;
-					left: 7px;
-				}
-				
-				.logout-button {
-					display: inline-block;
-					background-color: transparent;
-					border: 0;
-					margin-left: 17px;
-					line-height: 29px;
-					font-size: 14px;
-				}
+			&-pw {
+				width: 16vw;
+				margin-top: 0.5vh;
+				height: 4vh;
+				border: 0;
+				background-color: #F3F3F3;
+				box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 			}
 		}
 	}

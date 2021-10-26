@@ -108,15 +108,16 @@
 			text-align: center;
 
 			&-btn {
-			width: 17vw;
-			height: 3.9vh;
-			margin-top: 4vh;
-			text-align: center;
-			border: 0;
-			background-color: #FC6E51;
-			color: white;
-			font-size: 15px;
-			border-radius: 4px;
+				cursor: pointer;
+				width: 17vw;
+				height: 3.9vh;
+				margin-top: 4vh;
+				text-align: center;
+				border: 0;
+				background-color: #FC6E51;
+				color: white;
+				font-size: 15px;
+				border-radius: 4px;
 			}
 		}
 	}

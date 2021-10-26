@@ -1,4 +1,4 @@
-import MainIcon from '../../../assets/Main-icon.svg';
+import MainIcon from '../../../assets/logo.png';
 import './Nav.scss';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { useRecoilState } from 'recoil';

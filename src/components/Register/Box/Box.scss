@@ -1,0 +1,126 @@
+
+.register {
+	margin-top: 5vh;
+
+	&-text {
+		position: relative;
+		left: 2.3vw;
+		font-size: 1.3rem;
+		font-weight: 550;
+	}
+
+	&-box {
+		width: 24vw;
+		height: 65vh;
+		border: 1px solid #C4C4C4;
+		float: right;
+		margin-right: 19vw;
+
+		&-name {
+			text-align: center;
+
+			&-text {
+				margin-top: 50px;
+				margin-bottom: 0;
+				margin-right: 13.6vw;
+			}
+
+			&-input {
+				width: 17vw;
+				height: 3.9vh;
+				margin-top: 0.5vh;
+				border: 0;
+				background-color: #F3F3F3;
+				border-radius: 4px;
+			}
+		}
+
+		&-nick {
+			text-align: center;
+
+			&-text {
+				margin-top: 50px;
+				margin-bottom: 0;
+				margin-right: 15vw;
+			}
+
+			&-input {
+				width: 17vw;
+				height: 3.9vh;
+				margin-top: 0.5vh;
+				border: 0;
+				background-color: #F3F3F3;
+				border-radius: 4px;
+			}	
+		}
+
+		&-id {
+			text-align: center;
+
+			&-text {
+				margin-top: 50px;
+				margin-bottom: 0;
+				margin-right: 15vw;
+			}
+
+			&-input {
+				width: 13vw;
+				margin-right: 5vw;
+				height: 3.9vh;
+				margin-top: 0.5vh;
+				border: 0;
+				background-color: #F3F3F3;
+				border-radius: 4px;
+			}
+
+			 &-check {
+				 cursor: pointer;
+				 color: white;
+				 margin-left: -4.1vw;
+				 height: 3.5vh;
+				 border: 0;
+				 background-color: #FC6E51;
+				 border-radius: 4px;
+			 }
+		}
+
+		&-pw {
+			text-align: center;
+
+			&-text {
+				margin-top: 50px;
+				margin-bottom: 0;
+				margin-right: 14.3vw;
+			}
+
+			&-input {
+				width: 17vw;
+				height: 3.9vh;
+				margin-top: 0.5vh;
+				border: 0;
+				background-color: #F3F3F3;
+				border-radius: 4px;
+				margin-bottom: 1vh;
+			}	
+		}
+
+		&-submit {
+			text-align: center;
+
+			&-btn {
+			width: 17vw;
+			height: 3.9vh;
+			margin-top: 4vh;
+			text-align: center;
+			border: 0;
+			background-color: #FC6E51;
+			color: white;
+			font-size: 15px;
+			border-radius: 4px;
+			}
+		}
+	}
+
+	
+}
+

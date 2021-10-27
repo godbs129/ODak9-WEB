@@ -19,6 +19,7 @@
 			border: 0;
 			background-color: #FC6E51;
 			margin-bottom: 0.5vh;
+			cursor: pointer;
 		}
 
 		&-goto {
@@ -27,6 +28,10 @@
 
 		&-check {
 			margin-right: 10.3vw;
+
+			&-c {
+				cursor: pointer;
+			}
 		}
 
 		&-box {

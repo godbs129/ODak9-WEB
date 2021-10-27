@@ -1,12 +1,14 @@
 import { useRecoilState, useRecoilValue } from "recoil";
-import { registerAtom } from "../recoil/userAtom";
+import { loginAtom, registerAtom } from "../recoil/userAtom";
 import axios from 'axios';
 import { EndPoint } from "../components/config/EndPoint";
 import toast from 'react-hot-toast';
 import { useHistory } from "react-router";
+import Cookies from "js-cookie";
 
 const useAuth = () => {
 	const [register, setRegister] = useRecoilState(registerAtom);
+	const [login, setLogin] = useRecoilState(loginAtom);
 	const history = useHistory();
 
 	const checkID = async (id: string) => {
@@ -61,9 +63,30 @@ const useAuth = () => {
 		}
 	}
 
+	const signIn = async (isKeep: boolean) => {
+		const res = await axios.post(`${EndPoint}/auth/signin`, {
+			id: login.id,
+			pw: login.pw
+		});
+
+		if (res.data.status === 200) {
+			toast.success('로그인 성공');
+
+			if (isKeep === true) {
+				localStorage.setItem('token', res.data.data.token);
+			} else if (isKeep === false) {
+				Cookies.set('token', res.data.data.token, { expires: 7 });
+			}
+
+			history.push('/');
+		}
+
+	}
+
 	return {
 		checkID,
-		signUp
+		signUp,
+		signIn,
 	}
 }
 

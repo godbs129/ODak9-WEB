@@ -10,8 +10,8 @@ const Mainpage = (): JSX.Element => {
 		<>
 			<MainContainer>
 				<Switch>
-					<Route exact path="/" render={() => <Main />} />
-					<Route exact path="/community" render={() => <Community />} />
+					<Route exact path="/home" render={() => <Main />} />
+					<Route path="/home/community" render={() => <Community />} />
 				</Switch>
 			</MainContainer>
 		</>

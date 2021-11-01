@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
 import './ImageSlider.scss';
+import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 
 const ImageSlider = (): JSX.Element => {
 
@@ -12,8 +13,9 @@ const ImageSlider = (): JSX.Element => {
 		autoplaySpeed: 3800,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: true,
 		infinite: true,
+		prevArrow: <MdArrowBackIosNew color="black" />,
+		nextArrow: <MdArrowForwardIos color="black" />
 	}
 
 	const posts = [

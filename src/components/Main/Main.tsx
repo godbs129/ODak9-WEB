@@ -3,6 +3,7 @@ import Profile from "./Profile/Profile";
 import './Main.scss';
 import Cookies from "js-cookie";
 import Login from "./Login/Login";
+import Category from "./Category/Category";
 
 const Main = (): JSX.Element => {
 	const LS = localStorage.getItem('token');
@@ -11,8 +12,11 @@ const Main = (): JSX.Element => {
 	return (
 		<>
 			<div className="main">
-				<ImageSlider />
-				{LS || cookie ? <Profile /> : <Login />}
+				<div className="top">
+					<ImageSlider />
+					{LS || cookie ? <Profile /> : <Login />}
+				</div>
+				<Category />
 			</div>
 		</>
 	);

@@ -12,7 +12,7 @@ const Nav = (): JSX.Element => {
 			<div className="nav-bar">
 				<a href='/' ><img src={MainIcon} /></a>
 				<a href='/' className="nav-home">홈</a>
-				<a href='/community' className="nav-com">커뮤니티</a>
+				<a href='/home/community' className="nav-com">커뮤니티</a>
 				<a href='#' className="nav-save">보관함</a>
 				<a href='#' className="nav-cal">캘린더</a>
 				<span className="find">
